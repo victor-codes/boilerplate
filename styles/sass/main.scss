@@ -11,9 +11,14 @@
 
 // components
 
+@import "components/component";
+
 // layout
+@import "layouts/layout";
 
 // pages
+
+@import "pages/page";
 
 // shared
 @import "shared/titles";

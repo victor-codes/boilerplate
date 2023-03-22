@@ -7,3 +7,29 @@
     font-display: swap;
   }
 }
+
+@mixin maxw($width) {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin grid {
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@mixin spaceTop($spacing: 40) {
+  > :not(:first-child) {
+    margin-top: $spacing;
+  }
+}
+
+@mixin spaceLeft($spacing: 40) {
+  > :not(:first-child) {
+    margin-left: $spacing;
+  }
+}
